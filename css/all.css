@@ -1351,45 +1351,6 @@ body {
       @media all and (max-width: 769px) {
         .slide-wripper .img-holder img {
           max-height: 200px; } }
-  .slide-wripper .title {
-    font-family: "NautilusPompiliusRegular";
-    font-size: 42px;
-    line-height: 64px;
-    color: #057a43;
-    text-align: center;
-    margin-top: 20px;
-    min-height: 40px; }
-    @media all and (max-width: 993px) {
-      .slide-wripper .title {
-        font-size: 30px;
-        line-height: 32px;
-        margin-top: 0px; } }
-    @media all and (max-width: 769px) {
-      .slide-wripper .title {
-        font-size: 21px;
-        line-height: 24px;
-        min-height: 20px; } }
-  .slide-wripper .desc {
-    font-family: "AleksandraCRegular";
-    font-size: 32px;
-    line-height: 42px;
-    text-align: center;
-    color: #333333;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    min-height: 40px;
-    font-weight: bold; }
-    @media all and (max-width: 993px) {
-      .slide-wripper .desc {
-        font-size: 20px;
-        line-height: 36px;
-        margin-top: 10px;
-        margin-bottom: 10px; } }
-    @media all and (max-width: 769px) {
-      .slide-wripper .desc {
-        font-size: 16px;
-        line-height: 21px;
-        min-height: 20px; } }
   .slide-wripper .price {
     font-family: "AleksandraCRegular";
     font-size: 48px;
@@ -1411,6 +1372,47 @@ body {
     margin-top: 3wh; }
   .slide-wripper i {
     font-size: 30px; }
+
+.title {
+  font-family: "NautilusPompiliusRegular";
+  font-size: 42px;
+  line-height: 64px;
+  color: #057a43;
+  text-align: center;
+  margin-top: 20px;
+  min-height: 40px; }
+  @media all and (max-width: 993px) {
+    .title {
+      font-size: 30px;
+      line-height: 32px;
+      margin-top: 0px; } }
+  @media all and (max-width: 769px) {
+    .title {
+      font-size: 21px;
+      line-height: 24px;
+      min-height: 20px; } }
+
+.desc {
+  font-family: "AleksandraCRegular";
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #333333;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 40px;
+  font-weight: bold; }
+  @media all and (max-width: 993px) {
+    .desc {
+      font-size: 20px;
+      line-height: 36px;
+      margin-top: 10px;
+      margin-bottom: 10px; } }
+  @media all and (max-width: 769px) {
+    .desc {
+      font-size: 16px;
+      line-height: 21px;
+      min-height: 20px; } }
 
 .card-holder {
   display: -webkit-flex;
@@ -1552,7 +1554,7 @@ body {
 
 .cart .wrapper {
   background-color: rgba(255, 255, 255, 0.7);
-  width: 95%; }
+  width: 100%; }
 
 @media all and (max-width: 481px) {
   .cart .price {
@@ -1569,6 +1571,66 @@ body {
       font-size: 14px;
       line-height: 16px; } }
 
+.hidden {
+  display: none; }
+
+.pop_form {
+  max-width: 400px;
+  text-align: center; }
+  .pop_form h3 {
+    color: #333333;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "NautilusPompiliusRegular";
+    font-size: 24px;
+    line-height: 32px; }
+  .pop_form .title {
+    font-size: 24px;
+    line-height: 40px;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .pop_form span {
+    font-family: "AleksandraCRegular";
+    font-size: 19px;
+    line-height: 22px; }
+  .pop_form input {
+    height: 40px;
+    padding: 4px;
+    width: 70px;
+    font-family: "AleksandraCRegular";
+    font-size: 19px;
+    line-height: 22px;
+    margin: 2px;
+    border-radius: 3px;
+    border: 2px solid #057a43; }
+  .pop_form .desc {
+    font-size: 19px;
+    line-height: 22px; }
+    @media all and (min-width: 993px) {
+      .pop_form .desc {
+        max-width: 70%;
+        margin: 0 auto; } }
+  .pop_form .btn-group {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    box-sizing: border-box;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .pop_form .btn-group button {
+      display: block;
+      margin: 5px auto; }
+
 .btn {
   padding: 5px 12px;
   border: 2px solid #057a43;
@@ -1582,3 +1644,6 @@ body {
   .btn:hover {
     background-color: rgba(0, 0, 0, 0.3);
     text-shadow: none; }
+
+.m5 {
+  margin: 5px; }

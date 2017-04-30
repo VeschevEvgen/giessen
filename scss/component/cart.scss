@@ -1,7 +1,9 @@
 .cart{
 	.wrapper{
 		background-color: rgba(255, 255, 255, 0.7);
-		width: 95%;
+		width: 100%;
+		// // box-sizing: border-box;
+		// margin: 0 auto;
 	}
 	.price{
 		@media all and (max-width: ($screen-xs + 1px) )  {
@@ -23,4 +25,63 @@
 		}
 		
 	}
+}
+.hidden{
+	display: none;
+	
+}
+	.pop_form{
+		max-width: 400px;
+		text-align: center;
+		
+	h3{
+		color: $brand-primary;
+        border-radius: 6px;
+        text-align: center;
+        font-family: $title-fonth;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .title{
+        font-size: 24px;
+        line-height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+   }
+   span{
+		font-family: $desc-fonth;
+		 font-size: 19px;
+    	line-height: 22px;
+	}
+	input{
+		height: 40px;
+		padding: 4px;
+		width: 70px;
+		font-family: $desc-fonth;
+		 font-size: 19px;
+    	line-height: 22px;
+    	margin: 2px;
+    	border-radius: 3px;
+    	border: 2px solid $brand-success;
+	}
+   .desc{
+    font-size: 19px;
+    line-height: 22px;
+    @media all and (min-width: ($screen-md + 1px) )  {
+	max-width: 70%;
+	margin: 0 auto;
+	}
+	
+	
+
+}
+.btn-group{
+	@include flex-row(space-between, flex-start);
+	button{
+		display: block;
+		margin: 5px auto;
+		// max-width: 45%;
+	}
+}
+
 }

@@ -27,6 +27,35 @@
                }
            }
        }
+
+.price{
+    font-family: $desc-fonth;
+    font-size: 48px;
+    line-height: 42px;
+    text-align: center;
+    color: $brand-success;
+    @media all and (max-width: ($screen-md + 1px) )  {
+       font-size: 36px;
+       line-height: 44px;
+     }
+    @media all and (max-width: ($screen-sm + 1px) )  {
+       font-size: 26px;
+       line-height: 44px;
+   }
+}
+
+.wrapper{
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 25px;
+    margin-top: 3wh;
+
+}
+i{
+    font-size: 30px;
+}
+
+}
        .title{
         font-family: $title-fonth;
         font-size: 42px;
@@ -70,32 +99,4 @@
        line-height: 21px;
        min-height: 20px;
    }
-}
-.price{
-    font-family: $desc-fonth;
-    font-size: 48px;
-    line-height: 42px;
-    text-align: center;
-    color: $brand-success;
-    @media all and (max-width: ($screen-md + 1px) )  {
-       font-size: 36px;
-       line-height: 44px;
-     }
-    @media all and (max-width: ($screen-sm + 1px) )  {
-       font-size: 26px;
-       line-height: 44px;
-   }
-}
-
-.wrapper{
-    width: 85%;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 25px;
-    margin-top: 3wh;
-
-}
-i{
-    font-size: 30px;
-}
-
 }
