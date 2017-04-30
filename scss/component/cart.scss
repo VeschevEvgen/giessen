@@ -1,0 +1,26 @@
+.cart{
+	.wrapper{
+		background-color: rgba(255, 255, 255, 0.7);
+		width: 95%;
+	}
+	.price{
+		@media all and (max-width: ($screen-xs + 1px) )  {
+       font-size: 16px;
+       line-height: 44px;
+       font-weight: bold;
+   }
+   
+	}
+	.full-desc{
+		.desc{
+			font-size: 19px;
+			line-height: 28px;
+			text-align: justify;
+			@media all and (max-width: ($screen-sm + 1px) )  {
+       			font-size: 14px;
+       			line-height: 16px;
+   }
+		}
+		
+	}
+}

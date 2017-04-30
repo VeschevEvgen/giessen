@@ -3,6 +3,7 @@
 	// .card{
 	// 	@include flex-col(space-around, stretch);
 	// }
+}
 	.block {
 	@include flex-col(space-between, stretch);
 	position: relative;
@@ -14,8 +15,11 @@
 	padding: 5px;
 	overflow: hidden;
 
-}
 
+ .top-card-holder{
+ 	@include flex-col(space-between, stretch);
+ 	min-height: 340px;
+ }
 .product {
 	display: block;
 	max-height: 240px;
@@ -25,7 +29,7 @@
 .product img {
 	margin: 0 auto;
 	display: block;
-	max-height: 240px;
+	height: 240px;
 	max-width: 100%;
 }
 
@@ -46,19 +50,20 @@
 .preview:hover, .buy_now:hover {
 	background-position: 0 0;
 }
-.info h4 {
+h4 {
 	position: relative;
 	padding: 0 0 10px 0;
 	margin: 0 0 10px 0;
-	font-family: "NautilusPompiliusRegular", sans-serif;
+	font-family: $title-fonth, sans-serif;
 	font-weight: 500;
 	font-size: 19px;
 	line-height: 25px;
 	color: $brand-success;
 	text-align: center;
+	// padding-top: 20px;
 }
 
-.info h4::after {
+h4::after {
 	display: block;
 	position: absolute;
 	bottom: 0px;
@@ -71,7 +76,7 @@
 .info .description {
 	display: block;
 	padding-bottom: 20px;
-	font-family: "Open Sans", sans-serif;
+	font-family: $desc-fonth, sans-serif;
 	font-size: 14px;
 	font-weight: 600;
 	color: #5f5f5f;
@@ -80,8 +85,8 @@
 }
 
 .info .price {
-	font-family: "NautilusPompiliusRegular", Helvetica, Arial, sans-serif;
-	font-size: 34px;
+	font-family: $desc-fonth, Helvetica, Arial, sans-serif;
+	font-size: 24px;
 	font-weight: 700;
 	color: #372f2b;
 	line-height: 56px;

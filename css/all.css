@@ -945,6 +945,20 @@ hr {
   .hidden-print {
     display: none !important; } }
 
+@font-face {
+  font-family: "NautilusPompiliusRegular";
+  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot");
+  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.woff") format("woff"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "AleksandraCRegular";
+  src: url("../fonts/AleksandraCRegular/AleksandraCRegular.eot");
+  src: url("../fonts/AleksandraCRegular/AleksandraCRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/AleksandraCRegular/AleksandraCRegular.woff") format("woff"), url("../fonts/AleksandraCRegular/AleksandraCRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
 body {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
@@ -979,13 +993,6 @@ body {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto; }
-
-@font-face {
-  font-family: "NautilusPompiliusRegular";
-  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot");
-  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.woff") format("woff"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
 
 .header {
   background-color: rgba(255, 255, 255, 0.7);
@@ -1329,15 +1336,15 @@ body {
   padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 10px;
-  padding-right: 10px;
-  text-shadow: 0 2px 0 #fff; }
+  padding-right: 10px; }
   .slide-wripper .content {
     padding: 20px; }
   .slide-wripper .img-holder {
     padding: 20px; }
     .slide-wripper .img-holder img {
       max-height: 300px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: block; }
       @media all and (max-width: 993px) {
         .slide-wripper .img-holder img {
           max-height: 200px; } }
@@ -1363,14 +1370,15 @@ body {
         line-height: 24px;
         min-height: 20px; } }
   .slide-wripper .desc {
-    font-family: "NautilusPompiliusRegular";
+    font-family: "AleksandraCRegular";
     font-size: 32px;
     line-height: 42px;
     text-align: center;
     color: #333333;
     margin-top: 30px;
     margin-bottom: 30px;
-    min-height: 40px; }
+    min-height: 40px;
+    font-weight: bold; }
     @media all and (max-width: 993px) {
       .slide-wripper .desc {
         font-size: 20px;
@@ -1383,12 +1391,16 @@ body {
         line-height: 21px;
         min-height: 20px; } }
   .slide-wripper .price {
-    font-family: "NautilusPompiliusRegular";
+    font-family: "AleksandraCRegular";
     font-size: 48px;
     line-height: 42px;
     text-align: center;
     color: #057a43; }
-    @media all and (max-width: 481px) {
+    @media all and (max-width: 993px) {
+      .slide-wripper .price {
+        font-size: 36px;
+        line-height: 44px; } }
+    @media all and (max-width: 769px) {
       .slide-wripper .price {
         font-size: 26px;
         line-height: 44px; } }
@@ -1417,7 +1429,33 @@ body {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
-  .card-holder .block {
+
+.block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 36px 4px black;
+  margin: 5px;
+  padding: 5px;
+  overflow: hidden; }
+  .block .top-card-holder {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1434,32 +1472,25 @@ body {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    position: relative;
-    width: 100%;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0px 0px 36px 4px black;
-    margin: 5px;
-    padding: 5px;
-    overflow: hidden; }
-  .card-holder .product {
+    min-height: 340px; }
+  .block .product {
     display: block;
     max-height: 240px;
     overflow: hidden; }
-  .card-holder .product img {
+  .block .product img {
     margin: 0 auto;
     display: block;
-    max-height: 240px;
+    height: 240px;
     max-width: 100%; }
-  .card-holder .info {
+  .block .info {
     display: block;
     position: relative;
     padding: 10px; }
-  .card-holder .details {
+  .block .details {
     border-top: 1px solid #e5e5e5; }
-  .card-holder .preview:hover, .card-holder .buy_now:hover {
+  .block .preview:hover, .block .buy_now:hover {
     background-position: 0 0; }
-  .card-holder .info h4 {
+  .block h4 {
     position: relative;
     padding: 0 0 10px 0;
     margin: 0 0 10px 0;
@@ -1469,7 +1500,7 @@ body {
     line-height: 25px;
     color: #057a43;
     text-align: center; }
-  .card-holder .info h4::after {
+  .block h4::after {
     display: block;
     position: absolute;
     bottom: 0px;
@@ -1477,23 +1508,23 @@ body {
     width: 100%;
     height: 2px;
     background: #057a43; }
-  .card-holder .info .description {
+  .block .info .description {
     display: block;
     padding-bottom: 20px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "AleksandraCRegular", sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: #5f5f5f;
     width: 100%;
     clear: both; }
-  .card-holder .info .price {
-    font-family: "NautilusPompiliusRegular", Helvetica, Arial, sans-serif;
-    font-size: 34px;
+  .block .info .price {
+    font-family: "AleksandraCRegular", Helvetica, Arial, sans-serif;
+    font-size: 24px;
     font-weight: 700;
     color: #372f2b;
     line-height: 56px;
     text-align: center; }
-  .card-holder .buy_now {
+  .block .buy_now {
     float: right;
     position: relative;
     top: -5px;
@@ -1510,14 +1541,33 @@ body {
     font-size: 15px;
     box-shadow: inset 0px 0px 14px 0px rgba(255, 255, 255, 0.7);
     box-shadow: 0 2px 2px #165181; }
-    .card-holder .buy_now:hover {
+    .block .buy_now:hover {
       box-shadow: inset 0 0px 14px 2px rgba(0, 0, 0, 0.3); }
-  .card-holder .art {
+  .block .art {
     padding-left: 25px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #372f2b; }
+
+.cart .wrapper {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 95%; }
+
+@media all and (max-width: 481px) {
+  .cart .price {
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: bold; } }
+
+.cart .full-desc .desc {
+  font-size: 19px;
+  line-height: 28px;
+  text-align: justify; }
+  @media all and (max-width: 769px) {
+    .cart .full-desc .desc {
+      font-size: 14px;
+      line-height: 16px; } }
 
 .btn {
   padding: 5px 12px;
