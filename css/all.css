@@ -1342,7 +1342,7 @@ body {
   .slide-wripper .img-holder {
     padding: 20px; }
     .slide-wripper .img-holder img {
-      max-height: 300px;
+      max-height: 200px;
       margin: 0 auto;
       display: block; }
       @media all and (max-width: 993px) {
@@ -1352,8 +1352,8 @@ body {
         .slide-wripper .img-holder img {
           max-height: 200px; } }
   .slide-wripper .price {
-    font-family: "AleksandraCRegular";
-    font-size: 48px;
+    font-family: "Helvetica";
+    font-size: 40px;
     line-height: 42px;
     text-align: center;
     color: #057a43; }
@@ -1367,7 +1367,7 @@ body {
         line-height: 44px; } }
   .slide-wripper .wrapper {
     width: 85%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 25px;
     margin-top: 3wh; }
   .slide-wripper i {
@@ -1375,11 +1375,10 @@ body {
 
 .title {
   font-family: "NautilusPompiliusRegular";
-  font-size: 42px;
+  font-size: 38px;
   line-height: 64px;
   color: #057a43;
   text-align: center;
-  margin-top: 20px;
   min-height: 40px; }
   @media all and (max-width: 993px) {
     .title {
@@ -1393,15 +1392,13 @@ body {
       min-height: 20px; } }
 
 .desc {
-  font-family: "AleksandraCRegular";
-  font-size: 32px;
+  font-family: "Helvetica";
+  font-size: 28px;
   line-height: 42px;
   text-align: center;
   color: #333333;
-  margin-top: 30px;
   margin-bottom: 30px;
-  min-height: 40px;
-  font-weight: bold; }
+  min-height: 40px; }
   @media all and (max-width: 993px) {
     .desc {
       font-size: 20px;
@@ -1431,6 +1428,17 @@ body {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
+
+h4 {
+  position: relative;
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+  font-family: "NautilusPompiliusRegular", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  color: #057a43;
+  text-align: center; }
 
 .block {
   display: -webkit-flex;
@@ -1492,16 +1500,6 @@ body {
     border-top: 1px solid #e5e5e5; }
   .block .preview:hover, .block .buy_now:hover {
     background-position: 0 0; }
-  .block h4 {
-    position: relative;
-    padding: 0 0 10px 0;
-    margin: 0 0 10px 0;
-    font-family: "NautilusPompiliusRegular", sans-serif;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 25px;
-    color: #057a43;
-    text-align: center; }
   .block h4::after {
     display: block;
     position: absolute;
@@ -1513,14 +1511,14 @@ body {
   .block .info .description {
     display: block;
     padding-bottom: 20px;
-    font-family: "AleksandraCRegular", sans-serif;
+    font-family: "Helvetica", sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: #5f5f5f;
     width: 100%;
     clear: both; }
   .block .info .price {
-    font-family: "AleksandraCRegular", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: #372f2b;
@@ -1590,14 +1588,14 @@ body {
     margin-left: 5px;
     margin-right: 5px; }
   .pop_form span {
-    font-family: "AleksandraCRegular";
+    font-family: "Helvetica";
     font-size: 19px;
     line-height: 22px; }
   .pop_form input {
     height: 40px;
     padding: 4px;
     width: 70px;
-    font-family: "AleksandraCRegular";
+    font-family: "Helvetica";
     font-size: 19px;
     line-height: 22px;
     margin: 2px;
@@ -1647,3 +1645,46 @@ body {
 
 .m5 {
   margin: 5px; }
+
+.about .wrapper {
+  width: 100%;
+  padding: 20px 0; }
+
+.about .img-holder {
+  padding: 0; }
+
+.about img.img-about {
+  max-width: 100%;
+  max-height: 500px; }
+  @media all and (max-width: 769px) {
+    .about img.img-about {
+      max-height: 200px; } }
+
+.about-text {
+  font-size: 19px;
+  line-height: 28px;
+  text-align: justify; }
+  @media all and (max-width: 769px) {
+    .about-text {
+      font-size: 14px;
+      line-height: 16px; } }
+  .about-text i {
+    display: block;
+    float: left;
+    font-size: 16px;
+    line-height: 15px;
+    margin: 5px; }
+    .about-text i:before {
+      width: 20px;
+      display: block;
+      float: left; }
+  .about-text p {
+    display: block;
+    overflow: hidden;
+    font-size: 16px;
+    margin-bottom: 15px; }
+    @media all and (max-width: 769px) {
+      .about-text p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 7px; } }

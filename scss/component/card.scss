@@ -4,6 +4,18 @@
 	// 	@include flex-col(space-around, stretch);
 	// }
 }
+h4 {
+	position: relative;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	font-family: $title-fonth, sans-serif;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 25px;
+	color: $brand-success;
+	text-align: center;
+	// padding-top: 20px;
+}
 	.block {
 	@include flex-col(space-between, stretch);
 	position: relative;
@@ -50,18 +62,7 @@
 .preview:hover, .buy_now:hover {
 	background-position: 0 0;
 }
-h4 {
-	position: relative;
-	padding: 0 0 10px 0;
-	margin: 0 0 10px 0;
-	font-family: $title-fonth, sans-serif;
-	font-weight: 500;
-	font-size: 19px;
-	line-height: 25px;
-	color: $brand-success;
-	text-align: center;
-	// padding-top: 20px;
-}
+
 
 h4::after {
 	display: block;

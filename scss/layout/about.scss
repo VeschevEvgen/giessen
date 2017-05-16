@@ -1,0 +1,52 @@
+.about{
+	.wrapper{
+		width: 100%;
+		padding: 20px 0;
+	}
+	.img-holder{
+		padding: 0;
+	}
+	
+	img.img-about{
+		max-width: 100%;
+		max-height: 500px;
+		@media all and (max-width: ($screen-sm + 1px) )  {
+			max-height: 200px;
+		}
+	}
+	&-text{
+		font-size: 19px;
+		line-height: 28px;
+		text-align: justify;
+		@media all and (max-width: ($screen-sm + 1px) )  {
+			font-size: 14px;
+			line-height: 16px;
+		}
+		i{
+			display: block;
+			float: left;
+			font-size: 16px;
+			line-height: 15px;
+			// min-width: 150px;
+			margin: 5px;
+			// font-weight: bold;
+			&:before{
+				width: 20px;
+				display: block;
+				float: left;
+				// margin-right: 10px;
+			}
+		}
+		p{
+			display: block;
+			overflow: hidden;
+			font-size: 16px;
+			margin-bottom: 15px;
+			@media all and (max-width: ($screen-sm + 1px) )  {
+			font-size: 14px;
+			line-height: 16px;
+			margin-top: 7px;
+		}
+		}
+	}
+}
